@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WINNER</title>
+</head>
+
+<body>
+    <div class="winner-modal">
+        <div class="starts-img">
+            <img src="./icons/stars.svg" class="starts" alt="starts" />
+            <div class="vector-img">
+                <img src="./icons/vector.svg" class="vector" alt="start" />
+            </div>
+        </div>
+        <div class="winner-text">
+            <h1>HURRAY!</h1>
+            <p>YOU WON THE GAME</p>
+            <button class="play" onclick="playAgainBtn()">Play Again</button>
+        </div>
+    </div>
+    <div class="btns">
+    <button class="rules-btn" onclick="rulesBtn()" style="margin-right: 0.5rem;">Rules</button>
+  </div>
+    <div class="rules-modal">
+        <div class="modal-container">
+          <div class="modal-header">          
+            <button class="close-btn" onclick="closeBtn()"><img src="./icons/close.svg"  alt="Close Button" /></button>
+          </div>          
+          <div class="rules">
+            <h2 class="modal-heading">Game Rules</h2>
+            <ul type="square">
+              <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li></br>
+              <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper,scissors".</li></br>
+              <li>Use rock, paper, scissors to settle minor decissions or simply play to pass the time.</li></br>
+              <li>If both players lay down the same hand, each player lays down another hand.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

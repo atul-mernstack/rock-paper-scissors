@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>ROCK PAPER SCISSORS</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="item-text">ROCK</br>PAPER</br>SCISSORS</div>
+      <div class="score">
+        <div class="computer-score">
+          <div class="score__title">Computer </br> score</div>
+          <div class="cum_score">0</div>
+        </div>
+        <div class="your-score">
+          <div class="score__title">Your</br> score</div>
+          <div class="user_score">0</div>
+        </div>
+      </div>
+    </header>
+    <div class="game-sec">
+      <div class="info">
+        <p class="user">You picked</p>
+        <p class="computer">Computer picked</p>
+      </div>
+      <div class="game">
+        <img src="./icons/bg-triangle.svg" class="trinagle" />
+        <div class="user-choice scissors">
+          <div class="choice">
+            <img src="./icons/scissors.svg" style="place-content: center;" alt="Scissors" />
+          </div>
+        </div>
+        <div class="user-choice rock">
+          <div class="choice">
+            <img src="./icons/rock.svg" alt="Rock" />
+          </div>
+        </div>
+        <div class="user-choice paper">
+          <div class="choice">
+            <img src="./icons/paper.svg" alt="Paper" />
+          </div>
+        </div>
+        <div class="computer-choice scissors">
+          <div class="choice">
+            <img src="./icons/scissors.svg" alt="Scissors" />
+          </div>
+        </div>
+        <div class="computer-choice rock">
+          <div class="choice">
+            <img src="./icons/rock.svg" alt="Rock" />
+          </div>
+        </div>
+        <div class="computer-choice paper">
+          <div class="choice">
+            <img src="./icons/paper.svg" alt="Paper" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btns">
+      <button class="rules-btn" onclick="rulesBtn()">Rules</button>&nbsp;&nbsp;
+      <button class="next-btn" onclick="nextBtn()">Next</button>
+    </div>
+
+
+    <div class="rules-modal">
+      <div class="modal-header">          
+        <button class="close-btn" onclick="closeBtn()"><img src="./icons/close.svg"  alt="Close Button" /></button>
+      </div>
+      <div class="modal-container">             
+        <div class="rules">          
+          <h2 class="modal-heading">Game Rules</h2>
+          <ul type="square">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li></br>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper,scissors".</li></br>
+            <li>Use rock, paper, scissors to settle minor decissions or simply play to pass the time.</li></br>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="win-modal">
+      <div class="winner">You Win</div>
+      <button class="play play-again" onclick="playBtn()">Play Again</button>
+    </div>
+  </div>  
+  <script src="./script.js" differ></script>
+</body>
+
+</html>
