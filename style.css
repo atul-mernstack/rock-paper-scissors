@@ -115,14 +115,14 @@ body {
 
 .scissors {
   background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
-  right: 8rem;
-  top: 4%;
+  right: 9rem;
+  top: 6%;
 }
 
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
-  left: 8rem;
-  top: 4%;
+  left: 9rem;
+  top: 6%;
 }
 
 .rock {
